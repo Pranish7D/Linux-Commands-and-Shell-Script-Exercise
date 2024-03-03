@@ -1,0 +1,35 @@
+•      Create a .sh file using editor 
+•      Insert the following script into the file
+
+#!/bin/bash
+
+echo "1. Create a new file"
+echo "2. Delete a file"
+echo "3. See the content of a file"
+read -p "Enter your choice (1/2/3): " choice
+
+case $choice in
+    1)
+        read -p "Enter the filename to create: " file_name
+        touch "$file_name"
+        echo "File created: $file_name";;
+    2)
+        read -p "Enter the filename to delete: " file_name
+        if [ -f "$file_name" ]; then
+            rm "$file_name"
+            echo "File deleted: $file_name"
+        else
+            echo "File not found: $file_name"
+        fi;;
+    3)
+        read -p "Enter the filename to see the content: " file_name
+        if [ -f "$file_name" ]; then
+            cat "$file_name"
+        else
+            echo "File not found: $file_name"
+        fi;;
+    *)
+        echo "Invalid choice";;
+esac
+
+•      Run the file using bash (file name) command
