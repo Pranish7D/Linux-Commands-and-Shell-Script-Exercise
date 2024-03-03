@@ -1,0 +1,15 @@
+•	     Create a .sh file using editor 
+•      Insert the following script into the file
+
+#!/bin/bash
+
+echo "Files with Read, Write, and Execute Permissions:"
+echo "-------------------------------------------------"
+
+for file in *; do
+    if [ -f "$file" ] && [ -r "$file" ] && [ -w "$file" ] && [ -x "$file" ]; then
+        echo "$file"
+    fi
+done
+ 
+•      Run the file using bash (file name) command
