@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Enter your Name "
+read name
+echo "Enter Your Department "
+read department 
+echo "Enter Your Registration Number"
+read regno
+echo "Name: $name"
+echo "Department: $department"    
+echo "Registration Number: $regno"
+
+Run the file using bash (file name) command
+
