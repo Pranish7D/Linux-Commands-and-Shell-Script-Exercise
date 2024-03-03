@@ -1,0 +1,16 @@
+•      Create a .sh file using editor 
+•      Insert the following script into the file
+
+#!/bin/bash
+
+read -p "Enter a number (N): " n
+sum=0
+
+for (( i=1; i<=n; i++ )); do
+    sum=$((sum + i))
+done
+
+echo "Sum of first $n natural numbers: $sum"
+
+ 
+•      Run the file using bash (file name) command
