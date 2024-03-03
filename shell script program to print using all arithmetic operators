@@ -1,0 +1,30 @@
+Create a .sh file using editor 
+• Insert the following script into the file
+
+#!/bin/bash
+
+echo "enter the number1"
+read num1 
+echo "enter the number2"
+read num2
+
+sum=$((num1 + num2))
+echo "Addition: $sum"
+
+diff=$((num1 - num2))
+echo "Subtraction: $diff"
+
+product=$((num1 * num2))
+echo "Multiplication: $product"
+
+quotient=$((num1 / num2))
+echo "Division: $quotient"
+
+rem=$((num1 % num2))
+echo "Modulus: $rem"
+
+pow=$((num1 ** num2))
+echo "Power: $pow"
+
+
+Run the file using bash (file name) command
