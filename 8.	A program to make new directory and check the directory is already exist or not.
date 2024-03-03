@@ -1,0 +1,15 @@
+•	     Create a .sh file using editor 
+•      Insert the following script into the file
+
+#!/bin/bash
+
+read -p "Enter the directory name: " dir_name
+
+if [ ! -d "$dir_name" ]; then
+    mkdir "$dir_name"
+    echo "Directory created: $dir_name"
+else
+    echo "Directory already exists: $dir_name"
+fi
+
+•      Run the file using bash (file name) command
