@@ -1,0 +1,18 @@
+•	     Create a .sh file using editor 
+•      Insert the following script into the file
+
+#!/bin/bash
+
+factorial() {
+    if [ $1 -eq 0 ]; then
+        echo 1
+    else
+        echo $(( $1 * $(factorial $(( $1 - 1 ))) ))
+    fi
+}
+
+read -p "Enter a number: " n
+result=$(factorial $n)
+echo "Factorial of $n is: $result"
+ 
+•      Run the file using bash (file name) command
