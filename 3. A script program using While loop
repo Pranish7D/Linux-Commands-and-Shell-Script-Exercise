@@ -1,0 +1,13 @@
+•      Create a .sh file using editor 
+•      Insert the following script into the file
+
+#!/bin/bash
+
+count=1
+
+while [ $count -le 10 ]; do
+    echo "$count"
+    count=$((count + 1))
+done
+
+Run the file using bash (file name) command
